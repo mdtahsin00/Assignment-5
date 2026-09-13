@@ -114,14 +114,7 @@ export default function ExploreTech() {
                 </p>
               </div>
 
-              {/* {stack.length > 0 && (
-                <button
-                  onClick={handleRemoveAll}
-                  className="text-red-500 text-sm"
-                >
-                  Remove All
-                </button>
-              )} */}
+          
             </div>
 
             {stack.length === 0 ? (
@@ -158,15 +151,7 @@ export default function ExploreTech() {
                 ))}
               </div>
             )}
-            {/* <div className="text-center border border-red-700 px-5 py-1 rounded-[10px] font-bold mt-15">
-             {stack.length > 0 && (
-                <button
-                  onClick={handleRemoveAll}
-                  className="text-red-500 text-sm"
-                >
-                  Remove All
-                </button>
-              )}</div> */}
+           
             <div className="text-center border  px-5 py-3 rounded-[10px] font-bold mt-15">
               {stack.length > 0 ? (
                 <button
@@ -176,7 +161,7 @@ export default function ExploreTech() {
                   Remove All
                 </button>
               ) : (
-                <p className="text-gray-500 text-sm font-medium border border-amber-600 ">
+                <p className="text-gray-500 text-sm font-medium">
                   Your stack is empty.
                 </p>
               )}
