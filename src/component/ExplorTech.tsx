@@ -9,6 +9,7 @@ const getTechData = async (): Promise<TechData[]> => {
 export default function ExploreTech() {
   const [techs, setTech] = useState<TechData[]>([]);
   const [selectedTech, setSelectedTech] = useState<TechData | null>(null);
+  console.log(selectedTech);
   const [stack, setStack] = useState<TechData[]>([]);
   const handleAddToStack = (tech: TechData) => {
     const exists = stack.find((item) => item.id === tech.id);
@@ -21,7 +22,7 @@ export default function ExploreTech() {
     setStack([...stack, tech]);
   };
 
-  const handleRemove = (id: number) => {
+  const handleRemove = (id: string) => {
     setStack(stack.filter((item) => item.id !== id));
   };
 
