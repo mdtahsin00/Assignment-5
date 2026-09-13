@@ -1,6 +1,6 @@
 export default function Navbar() {
   return (
-    <div className="border-b border-[#F1F5F9]">
+    <div className="border-b border-[#F1F5F9] sticky top-0 bg-white">
     <nav className="flex justify-between container mx-auto items-center p-5">
       <div>
         <img src="/public/assets/logo-text.png" alt="Logo" />
