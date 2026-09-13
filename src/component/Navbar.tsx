@@ -3,7 +3,7 @@ export default function Navbar() {
     <div className="border-b border-[#F1F5F9] sticky top-0 bg-white">
     <nav className="flex justify-between container mx-auto items-center p-5">
       <div>
-        <img src="/public/assets/logo-text.png" alt="Logo" />
+        <img src="/assets/logo-text.png" alt="Logo" />
       </div>
       <div>
         <ol className="flex gap-5 items-center">
